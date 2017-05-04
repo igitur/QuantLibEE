@@ -18,19 +18,13 @@ however, you can still use existing add-ins through the new mechanism - an XML n
 Create a file qdate.natvis in `%ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Packages\Debugger\Visualizers` directory
 like this :
 
+```xml
 <?xml version="1.0" encoding="utf-8"?>
-
   <AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
-
     <Type Name="QuantLib::Date">
-
       <DisplayString LegacyAddin="%ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\QuantLibEE.dll"
-
                      Export="AddIn_quantlibdate">
-
       </DisplayString>
-
     </Type>
-
 </AutoVisualizer>
-
+```
